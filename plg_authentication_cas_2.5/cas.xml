@@ -28,7 +28,7 @@
         <fields name="params">
             <fieldset name="basic">
                 <field name="host" type="text"
-                    default="cas.gvsun.net"
+                    default="www.example.com"
                     description="PLG_CAS_FIELD_HOST_DESC"
                     label="PLG_CAS_FIELD_HOST_LABEL"
                     size="20"
@@ -40,7 +40,7 @@
                     size="20"
                 />
                 <field name="port" type="text"
-                    default="8443"
+                    default="443"
                     description="PLG_CAS_FIELD_PORT_DESC"
                     label="PLG_CAS_FIELD_PORT_LABEL"
                     size="20"
