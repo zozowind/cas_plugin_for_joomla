@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : cas.xml
+    Created on : 2012年5月16日, 下午3:51
+    Author     : Marco
+    Description:
+        CAS 验证插件
+-->
+<extension version="2.5" type="plugin" group="authentication">
+	<name>plg_authentication_cas</name>
+	<author>Marco Chen</author>
+	<creationDate>May 8th, 2012</creationDate>
+	<copyright>Copyright (C) 2012 - 2013 GVSUN. All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>zhijie2008.chen@gmail.com</authorEmail>
+	<authorUrl>chenzhijie.me</authorUrl>
+	<version>2.5.0</version>
+	<description>PLG_CAS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cas">cas.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="zh-CN">zh-CN.plg_authentication_cas.ini</language>
+		<language tag="zh-CN">zh-CN.plg_authentication_cas.sys.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="host" type="text"
+                    default="cas.gvsun.net"
+                    description="PLG_CAS_FIELD_HOST_DESC"
+                    label="PLG_CAS_FIELD_HOST_LABEL"
+                    size="20"
+                />
+                <field name="context" type="text"
+                    default="/cas"
+                    description="PLG_CAS_FIELD_CONTEXT_DESC"
+                    label="PLG_CAS_FIELD_CONTEXT_LABEL"
+                    size="20"
+                />
+                <field name="port" type="text"
+                    default="8443"
+                    description="PLG_CAS_FIELD_PORT_DESC"
+                    label="PLG_CAS_FIELD_PORT_LABEL"
+                    size="20"
+                />
+                <field name="ca_cert_path" type="text"
+                    default="/usr/share/ca-certificates/"
+                    description="PLG_CAS_FIELD_CA_PATH_DESC"
+                    label="PLG_CAS_FIELD_CA_PATH_LABEL"
+                    size="20"
+                />
+               <field name="autoregister" type="radio"
+					default="0"
+					description="PLG_CAS_FIELD_AUTOADDUSER_DESC"
+					label="PLG_CAS_FIELD_AUTOADDUSER_LABEL"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+                    
+                </field>
+                <!--
+                <field name="ssologout" type="radio"
+					default="0"
+					description="PLG_CAS_FIELD_SSOLOGOUT_DESC"
+					label="PLG_CAS_FIELD_SSOLOGOUT_LABEL"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+                    
+                </field>
+                -->
+            </fieldset>
+		</fields>
+	</config>
+</extension>

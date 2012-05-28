@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : cas.xml
+    Created on : 2012年5月16日, 下午3:57
+    Author     : Marco Chen
+    Description:
+        CAS 单点登陆系统插件,负责检查当前状态并进行相应跳转认证
+-->
+<extension version="2.5" type="plugin" group="system">
+	<name>plg_system_cas</name>
+	<author>Marco Chen</author>
+	<creationDate>May 8th, 2012</creationDate>
+	<copyright>Copyright (C) 2012 - 2013 GVSUN. All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>zhijie2008.chen@gmail.com</authorEmail>
+	<authorUrl>chenzhijie.me</authorUrl>
+	<version>2.5.0</version>
+	<description>PLG_CAS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cas">cas.php</filename>
+		<filename>index.html</filename>
+        <filename>caslib.php</filename>
+        <filename>cas.xml</filename>
+        <folder>CAS</folder>
+	</files>
+	<languages>
+		<language tag="zh-CN">zh-CN.plg_system_cas.ini</language>
+		<language tag="zh-CN">zh-CN.plg_system_cas.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>
